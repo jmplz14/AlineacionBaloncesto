@@ -1,0 +1,19 @@
+{
+  "name": "alineacionbaloncesto",
+  "version": "1.0.0",
+  "description": "Proyecto para la asignatura IV",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmplz14/AlineacionBaloncesto.git"
+  },
+  "author": "jmplz14",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/jmplz14/AlineacionBaloncesto/issues"
+  },
+  "homepage": "https://github.com/jmplz14/AlineacionBaloncesto#readme"
+}
