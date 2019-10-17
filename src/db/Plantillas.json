@@ -1,0 +1,72 @@
+
+{
+    "equipos": [
+      {
+        "equipo": "Madrid",
+        "jugadores": [
+            {
+                "nombre":"Campazzo",
+                "dorsal":7
+            },
+            {
+                "nombre":"Llull",
+                "dorsal":23
+            }
+            ,
+            {
+                "nombre":"Carroll",
+                "dorsal":20
+            },
+            {
+                "nombre":"Rudy",
+                "dorsal":5
+            },
+            {
+                "nombre":"Deck",
+                "dorsal":14
+            },
+            {
+                "nombre":"Nakic",
+                "dorsal":17
+            },
+            {
+                "nombre":"Reyes",
+                "dorsal":9
+            }
+        ]
+      },
+      {
+        "equipo": "Unicaja",
+        "jugadores": [
+            {
+                "nombre":"Deon",
+                "dorsal":2
+            },
+            {
+                "nombre":"Axel",
+                "dorsal":6
+            },
+            {
+                "nombre":"Dragan",
+                "dorsal":12
+            },
+            {
+                "nombre":"Josh",
+                "dorsal":14
+            },
+            {
+                "nombre":"Adam",
+                "dorsal":21
+            },
+            {
+                "nombre":"Melvin",
+                "dorsal":22
+            },
+            {
+                "nombre":"Frank",
+                "dorsal":15
+            }
+        ]
+      }
+    ]
+  }
