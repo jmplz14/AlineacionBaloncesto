@@ -1,44 +1,45 @@
 {
     "partidos":[
         {
-            "local": "Madrid",
+            "idPartido": "P001",
+            "local": "E001",
             "titularesLocales": [7,23,20,5,14],
-            "visitante": "Barcelona",
+            "visitante": "E002",
             "titularesVisitantes": [2,6,12,14,21],
             "finalizado": true,
             "num_cuarto": 4,
             "cambios":[{
 
                     "equipo": "l",
-                    "jugador": 7,
+                    "cambiado": 7,
                     "sustituto": 17,
                     "minuto": "5:33",
                     "cuarto": 0
                 },
                 {
                     "equipo": "l",
-                    "jugador": 7,
+                    "cambiado": 7,
                     "sustituto": 17,
                     "minuto": "5:33",
                     "cuarto": 1
                 },
                 {
                     "equipo": "v",
-                    "jugador": 2,
+                    "cambiado": 2,
                     "sustituto": 22,
                     "minuto": "5:33",
                     "cuarto": 2
                 },
                 {
                     "equipo": "l",
-                    "jugador": 23,
+                    "cambiado": 23,
                     "sustituto": 9,
                     "minuto": "5:33",
                     "cuarto": 3
                 },
                 {
                     "equipo": "v",
-                    "jugador": 6,
+                    "cambiado": 6,
                     "sustituto": 15,
                     "minuto": "5:33",
                     "cuarto": 4

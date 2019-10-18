@@ -2,6 +2,7 @@
 {
     "equipos": [
       {
+        "id": "E001",
         "equipo": "Madrid",
         "jugadores": [
             {
@@ -36,6 +37,7 @@
         ]
       },
       {
+        "id": "E002",
         "equipo": "Unicaja",
         "jugadores": [
             {
