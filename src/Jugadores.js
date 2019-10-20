@@ -9,4 +9,4 @@ class Jugador {
 
 }
 
-module.exports = ProductService;
+module.exports = Jugador;

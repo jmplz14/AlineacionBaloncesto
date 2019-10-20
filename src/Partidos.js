@@ -2,8 +2,8 @@ const fs = require('fs')
 
 class Partido {
 
-	constructor(idPartido, local, titularesLocales, visitante, titularesVisitantes, numCuartos, listaCambios ) {
-		this.idPartido = idPartido;
+	constructor(id, local, titularesLocales, visitante, titularesVisitantes, numCuartos, listaCambios ) {
+		this.id = id;
 		this.local = local;
 		this.titularesLocales = titularesLocales;
 		this.visitante = visitante;
@@ -16,4 +16,4 @@ class Partido {
 
 }
 
-module.exports = Partidos;
+module.exports = Partido;

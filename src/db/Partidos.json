@@ -1,13 +1,12 @@
 {
     "partidos":[
         {
-            "idPartido": "P001",
+            "id": "P001",
             "local": "E001",
             "titularesLocales": [7,23,20,5,14],
             "visitante": "E002",
             "titularesVisitantes": [2,6,12,14,21],
-            "finalizado": true,
-            "num_cuarto": 4,
+            "numCuartos": 4,
             "cambios":[{
 
                     "equipo": "l",
@@ -17,9 +16,40 @@
                     "cuarto": 0
                 },
                 {
+                    "equipo": "v",
+                    "cambiado": 2,
+                    "sustituto": 22,
+                    "minuto": "5:33",
+                    "cuarto": 2
+                },
+                {
                     "equipo": "l",
-                    "cambiado": 7,
-                    "sustituto": 17,
+                    "cambiado": 23,
+                    "sustituto": 9,
+                    "minuto": "5:33",
+                    "cuarto": 3
+                },
+                {
+                    "equipo": "v",
+                    "cambiado": 6,
+                    "sustituto": 15,
+                    "minuto": "5:33",
+                    "cuarto": 4
+                }]
+
+        },
+        {
+            "id": "P002",
+            "local": "E001",
+            "titularesLocales": [9,23,20,5,14],
+            "visitante": "E002",
+            "titularesVisitantes": [2,6,12,14,21],
+            "numCuartos": 4,
+            "cambios":[{
+
+                    "equipo": "l",
+                    "cambiado": 9,
+                    "sustituto": 7,
                     "minuto": "5:33",
                     "cuarto": 1
                 },
@@ -33,7 +63,7 @@
                 {
                     "equipo": "l",
                     "cambiado": 23,
-                    "sustituto": 9,
+                    "sustituto": 17,
                     "minuto": "5:33",
                     "cuarto": 3
                 },

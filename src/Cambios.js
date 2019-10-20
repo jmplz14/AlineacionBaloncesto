@@ -1,8 +1,8 @@
 const fs = require('fs')
-class Cambios {
+class Cambio {
 
-	constructor(idEquipo, cambiado, sustituto, minuto, cuarto) {
-        this.idEquipo = idEquipo;
+	constructor(equipo, cambiado, sustituto, minuto, cuarto) {
+        this.equipo = equipo;
         this.cambiado = cambiado;
         this.sustituto = sustituto;
         this.minuto = sustituto;
@@ -11,4 +11,4 @@ class Cambios {
 
 
 }
-module.exports = Cambios;
+module.exports = Cambio;
