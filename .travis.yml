@@ -1,9 +1,7 @@
 language: node_js
 node_js:
   - 10.16.3
-script: node_modules/karma/bin/karma start my.conf.js --single-run
-before_install:
-    - export DISPLAY=:99.0
-before_script:
-    - npm install
+script:
+  - npm test
+
 
