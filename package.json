@@ -4,7 +4,7 @@
   "description": "Proyecto para la asignatura IV",
   "main": "app.js",
   "scripts": {
-    "test": "jasmine test/test.js"
+    "test": "jasmine test/*.js"
   },
   "repository": {
     "type": "git",

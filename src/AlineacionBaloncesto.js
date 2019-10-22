@@ -5,19 +5,19 @@ const Cambio = require("./Cambios")
 const fs = require('fs');
 
 const filter = require('lodash');
-const fileContents = fs.readFileSync('db/Partidos.json', 'utf8')
+const fileContents = fs.readFileSync('src/db/Partidos.json', 'utf8')
 const data1 = JSON.parse(fileContents);
 
-const fileContents2 = fs.readFileSync('db/Plantillas.json', 'utf8')
+const fileContents2 = fs.readFileSync('src/db/Plantillas.json', 'utf8')
 const data2 = JSON.parse(fileContents2);
 
 
 class AlineacionBaloncesto {
     
-    constructor(Plantillas, Enfrentamientos) { 
+    constructor() { 
       //Las uso como base de datos hasta que las implementemos
-      this.Plantillas = Plantillas;
-      this.Enfrentamientos = Enfrentamientos;
+      this.Plantillas = data2;
+      this.Enfrentamientos = data1;
     }
     /*cogerDatosEquipo(identificador){
       return filter.filter(this.Plantillas["equipos"], x => x.id === identificador)
@@ -26,7 +26,7 @@ class AlineacionBaloncesto {
     /*cogerDatosPartido(identificador){
       return filter.filter(this.Enfrentamientos["partidos"], x => x.id === identificador)
     }*/
-
+    
     getEquipo(identificador){
         var datos_equipo = filter.filter(this.Plantillas["equipos"], x => x.id === identificador)
         var equipo = -1;
@@ -64,16 +64,14 @@ class AlineacionBaloncesto {
 
         var json_equipo = JSON.stringify(equipo);
         json_equipo = JSON.parse(json_equipo);
-        console.log(this.Plantillas);
         this.Plantillas["equipos"].push(json_equipo);
-        console.log(this.Plantillas);
 
 
       }
 
       
     }
-
+    
     getPartido(identificador){
       var datos_partido = filter.filter(this.Enfrentamientos["partidos"], x => x.id === identificador)
       var partido = -1
@@ -100,15 +98,14 @@ class AlineacionBaloncesto {
       //console.log(partido)
       return partido
     }
+    
     setPartido(partido){
       //console.log(partido)
       var datos = filter.filter(this.Enfrentamientos["partidos"], x => x.id === partido.id)
       if(datos.length == 0 && partido instanceof Partido){
         var json_partido = JSON.stringify(partido);
         json_partido = JSON.parse(json_partido);
-        console.log(this.Enfrentamientos);
         this.Enfrentamientos["partidos"].push(json_partido);
-        console.log(this.Enfrentamientos);
       }
     }
 
@@ -231,9 +228,5 @@ class AlineacionBaloncesto {
 
 }
 
-var prueba = new AlineacionBaloncesto(data2,data1)
-
-
-console.log(prueba.obtenerNumTitularidades("E001",7))
 
 module.exports = AlineacionBaloncesto;
