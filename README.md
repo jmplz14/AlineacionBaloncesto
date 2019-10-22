@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/jmplz14/AlineacionBaloncesto.svg?branch=master)](https://travis-ci.org/jmplz14/AlineacionBaloncesto)
+[![CircleCI](https://circleci.com/gh/jmplz14/AlineacionBaloncesto.svg?style=svg)](https://circleci.com/gh/jmplz14/AlineacionBaloncesto)
 # AlineacionBaloncesto
 ## Descripción
 El objetivo de mi proyecto sera registrar las alineaciones en un partido de baloncesto. Sera usada para poder obtener cuantos minutos juega cada jugador. Necesitaremos poder iniciar y finalizar partidos entre dos equipos y registrar cambios de jugadores durante el partido. 
