@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/jmplz14/AlineacionBaloncesto#readme",
   "devDependencies": {
-    "jasmine": "^3.5.0"
+    "jasmine": "^3.5.0",
+    "jsdoc": "^3.6.3"
   },
   "dependencies": {
     "lodash": "^4.17.15"

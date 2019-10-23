@@ -23,11 +23,11 @@ describe("Añadir equipo con id E003", function() {
   it("Se crea el equipo con id E003", function() {
     var jugador = new Jugador("Juan",7)
     jugadores.push(jugador)
-    jugador = new Jugador("Maria",5)
+    jugador = new Jugador("María",5)
     jugadores.push(jugador)
     jugador = new Jugador("Luis",6)
     jugadores.push(jugador)
-    jugador = new Jugador("Jesus",13)
+    jugador = new Jugador("Jesús",13)
     jugadores.push(jugador)
     jugador = new Jugador("Marta",8)
     jugadores.push(jugador)
@@ -87,14 +87,14 @@ describe("Obtiene los cambios del partido P001 del jugador del equipo E001 con d
   });
 });
 
-describe("Obtener el numero de titularidades del jugado con dorsal 7 del equipo E001", function() {
-  it("Se devuelve el numero de titularidades(En este caso 1)", function() {
+describe("Obtener el número de titularidades del jugado con dorsal 7 del equipo E001", function() {
+  it("Se devuelve el número de titularidades(En este caso 1)", function() {
     
     expect(servicio.obtenerNumTitularidades("E002",21)).toBe(2);
   });
 });
 
-describe("Obtener el numero de partidos jugados del jugador con dorsal 7 del equipo E001", function() {
+describe("Obtener el número de partidos jugados del jugador con dorsal 7 del equipo E001", function() {
   it("Se devuelve un array con los códigos de los partidos jugados(P001 y P002)", function() {
     var partidos_jugados = servicio.obtenerPartidosJugados("E002",21)
     expect([partidos_jugados[0].id,partidos_jugados[1].id].toString).toBe(["P001","P002"].toString);
