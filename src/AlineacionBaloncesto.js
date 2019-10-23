@@ -141,7 +141,7 @@ class AlineacionBaloncesto {
 
     /**
     * @description Se utiliza para obtener los cambios de un jugador dentro de un array de cambios.
-    * @param {String} equipo Sera un string que contendrá "l" si es del equipo local y "v" si es el visitante.
+    * @param {String} equipo Será un string que contendrá "l" si es del equipo local y "v" si es el visitante.
     * @param {Int} dorsal Dorsal del jugador buscado.
     * @param {Array.<Cambio>} cambios Lista de los cambios en los que buscaremos.
     * @return {Array.<Cambio>} Lista de cambios en los que participa el jugador buscado.
@@ -159,7 +159,7 @@ class AlineacionBaloncesto {
 
     /**
     * @description Se utiliza para obtener la lista de titulares de un partido.
-    * @param {String} equipo Sera un string que contendrá "l" si es del equipo local y "v" si es el visitante.
+    * @param {String} equipo Será un string que contendrá "l" si es del equipo local y "v" si es el visitante.
     * @param {Partido} partido Partido del que obtendremos la lista de titulares.
     * @return {Array.<Int>} Dorsales de los cinco titulares.
     */ 

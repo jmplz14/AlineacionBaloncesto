@@ -63,7 +63,7 @@ En nuestro caso tendremos los siguientes 10 tests:
 - Obtener la alineación titular del equipo visitante de un partido.
  
 ## Clase
-Para ver la información de las clases utilizadas se puede consultar [aquí](https://github.com/jmplz14/AlineacionBaloncesto/docs/index.html).
+Para ver la información de las clases utilizadas se puede consultar [aquí](https://jmplz14.github.io/AlineacionBaloncesto/AlineacionBaloncesto.html).
 
 ## Integración Continua
 Para la integración continua he utilizado [Travis CI](https://travis-ci.com/) y [Circle CI](https://circleci.com/). En ambos servicios utilizaremos la cuenta de github para registrarnos.

@@ -18,5 +18,5 @@ El objetivo de mi proyecto será registrar las alineaciones en un partido de bal
 - Test: De los tres dados en la teoría de la asignatura usaré [Jasmine](https://jasmine.github.io/).
 
 ## Documentación del hito 2
-Puede leerla [aquí](https://github.com/jmplz14/AlineacionBaloncesto/docs/ficherosMd/hito2.md)
+Puede leerla [aquí](https://github.com/jmplz14/AlineacionBaloncesto/blob/master/docs/ficherosMd/Hito2.md)
 
