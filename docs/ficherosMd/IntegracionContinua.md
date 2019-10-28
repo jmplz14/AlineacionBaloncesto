@@ -37,18 +37,12 @@ Como se ve en el apartado de script, especificamos que ejecute los tests para to
 ## Instalación
 Para la instalación se tendrá que ejecutar el siguiente comando:
 
-<code>
-
-    npm install
-</code>
+<code>npm install</code>
 
 ## Test
 La ejecución de los test se realizarán con el siguiente comando:
 
-<code>
-
-    npm test
-</code>
+<code>npm test</code>
 
 En nuestro caso tendremos los siguientes 10 tests:
 - Comprueba que existe un equipo.
@@ -71,8 +65,7 @@ Para la integración continua he utilizado [Travis CI](https://travis-ci.com/) y
 ### Circle CI
 Circle es un sistema basado en la nube y tiene un plan gratuito que nos permite usarlo sin problemas para esta práctica. Tiene una configuración muy sencilla mediante el fichero [config.yml](https://github.com/jmplz14/AlineacionBaloncesto/blob/master/.circleci/config.yml).
 
-<code>
-    
+ 
     version: 2.1
     jobs:
         build:
@@ -86,7 +79,7 @@ Circle es un sistema basado en la nube y tiene un plan gratuito que nos permite 
             - run:
                 name: Correr test
                 command: npm test
-</code>
+
 
 En nuestro caso usaremos la imagen con la versión de node 10.16.3 y realizaremos la instalación y los test. 
 
@@ -96,14 +89,13 @@ Una de las principales ventajas de Circle sobre Travis es el tiempo de ejecució
 Es de los mas utilizados y con una mayor cantidad de documentación para ayudarnos a la hora de la configuración. Tiene un plan gratuito para proyectos de código abierto y también esta basado en la nube. 
 
 En este caso el fichero de configuración es [travis.yml](https://github.com/jmplz14/AlineacionBaloncesto/blob/master/.travis.yml)
-<code>
 
     language: node_js
     node_js:
     - 10.16.3
     script:
     - npm test
-</code>
+
 
 El fichero es mas sencillo que en Circle y solo especifico que se usará node y la versión 10.16.3. En el apartado de script especifico el comando para ejecutar los test.
 
