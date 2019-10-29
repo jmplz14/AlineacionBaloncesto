@@ -112,6 +112,12 @@ Circle es un sistema basado en la nube y tiene un plan gratuito que nos permite 
 
 En nuestro caso usaremos la imagen con la versión de node 10.16.3 y realizaremos la instalación y los test. 
 
+El apartado version nos especifica la versión que utilizaremos de Circle. En el apartado bulid especificamos la configuración que tendremos para llevar a cabo la ejecución de los test.
+
+En docker especificaremos la imagen docker que queremos que ejecute nuestros test. En nuestro caso sera una imagen con la version de node js 10.16.3. 
+
+El apartado steps nos indicara los pasos necesarios para la ejecución de nuestros test. Checkout copia el código a el directorio en el que trabajara Circle. Después hemos especificado dos ordenes que tiene que ejecutar, npm install para instalar todo lo necesario mediante Npm, que es nuestra herramienta de construcción y npm test que para ejecutar los test que tenemos programados. El apartado Name de estos dos comandos es una forma de describir lo que esta realizando Circle para verlo claramente cuando estén ejecutándose.
+
 Una de las principales ventajas de Circle sobre Travis es el tiempo de ejecución. En los tests realizados Circle me ha tardado unos 10 segundos mientras que Travis tardó unos dos minutos.
 
 ### Travis CI
@@ -121,11 +127,14 @@ En este caso el fichero de configuración es [travis.yml](https://github.com/jmp
 
     language: node_js
     node_js:
-    - 10.16.3
+    - 9
+    - 10
+    - 11
+    - 12
     script:
     - npm test
 
 
-El fichero es mas sencillo que en Circle y solo especifico que se usará node y la versión 10.16.3. En el apartado de script especifico el comando para ejecutar los test.
+El fichero es mas sencillo que en Circle. Se especifica en la primera linea que se usara node.js para el proyecto. En el apartado node_js especifico las versiónes para las que ejecutaremos nuestros test. En el apartado de script especifico el comando para ejecutar los test, por defecto Travis utiliza la orden npm test para ejecutarlos, mirando en el package.json la configuración que tenemos para los test. Por tanto este apartado no sería necesario especificarlo. La demás configuración de Travis la dejamos por defecto. 
 
 
