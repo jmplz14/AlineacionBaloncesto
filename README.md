@@ -116,9 +116,9 @@ El apartado version nos especifica la versión que utilizaremos de Circle. En el
 
 En docker especificaremos la imagen docker que queremos que ejecute nuestros test. En nuestro caso sera una imagen con la version de node js 10.16.3. 
 
-El apartado steps nos indicara los pasos necesarios para la ejecución de nuestros test. Checkout copia el código a el directorio en el que trabajara Circle. Después hemos especificado dos ordenes que tiene que ejecutar, npm install para instalar todo lo necesario mediante Npm, que es nuestra herramienta de construcción y npm test que para ejecutar los test que tenemos programados. El apartado Name de estos dos comandos es una forma de describir lo que esta realizando Circle para verlo claramente cuando estén ejecutándose.
+El apartado steps nos indicara los pasos necesarios para la ejecución de nuestros test. Checkout copia el código al directorio en el que trabajara Circle. Después hemos especificado dos ordenes que tiene que ejecutar, npm install para instalar todo lo necesario mediante Npm, que es nuestra herramienta de construcción y npm test para ejecutar los test que tenemos programados. El apartado Name de estos dos comandos es una forma de describir lo que esta realizando Circle para verlo claramente al ejecutarse.
 
-Una de las principales ventajas de Circle sobre Travis es el tiempo de ejecución. En los tests realizados Circle me ha tardado unos 10 segundos mientras que Travis tardó unos dos minutos.
+Una de las principales ventajas de Circle sobre Travis es el tiempo de ejecución. En los tests realizados Circle me ha tardado unos 10 segundos mientras que Travis tardó sobre un minuto para ejecutar lo mismo que Circle.
 
 ### Travis CI
 Es de los mas utilizados y con una mayor cantidad de documentación para ayudarnos a la hora de la configuración. Tiene un plan gratuito para proyectos de código abierto y también esta basado en la nube. 
